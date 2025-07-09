@@ -3,8 +3,7 @@ import joblib
 import pandas as pd
 
 app = Flask(__name__)
-model = joblib.load('model_202211044.pkl')
-
+model = joblib.load('model_202211044 (1).pkl')
 @app.route('/', methods=['GET', 'POST'])
 def index():
     prediction = None
